@@ -132,15 +132,6 @@ class ChewClock {
     context.strokeStyle = CLOCK_SECTICK_COLOR;
     context.closePath();
     context.stroke();
-
-    
-    
-  }
-  String pad2(int number) {
-    if (number < 10) {
-      return "0${number}";
-    }
-    return "${number}";
   }
 }
 double hourTick(int h){
@@ -152,8 +143,4 @@ double convertHM(int h,int m){
     h = h-12;
   }
   return (h*60+m)/(12*60)*2*PI;
-}
-
-num minpercent(int min) {
-  return min/60;
 }
